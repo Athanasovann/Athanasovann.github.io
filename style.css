@@ -55,19 +55,8 @@ main {
     padding: 15px;
 }
 
-/* portfolio styles */
-#interests {
-    border: 4px rgb(255, 255, 255) ridge;
-    padding: 8px;
-}
-h2, h3 {
-    margin: 0px;
-}
  /* portfolio styles */
  .content h1 {
-    color: black;
-}
-.li1 {
     color: black;
 }
 
