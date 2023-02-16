@@ -338,7 +338,7 @@ function projectileCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "darkgreen";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
@@ -392,7 +392,7 @@ function playerFrictionAndGravity() {
 
 function drawPlatforms() {
   for (var i = 0; i < platforms.length; i++) {
-    ctx.fillStyle = "grey";
+    ctx.fillStyle= "white";
     ctx.fillRect(
       platforms[i].x,
       platforms[i].y,
