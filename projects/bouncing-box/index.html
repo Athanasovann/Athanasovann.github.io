@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(255, 255, 255);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -19,7 +19,10 @@
 		}
 		.board{
 			height: 100vh;
+			
 		}
+		
+	
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
@@ -73,11 +76,14 @@
 			*/
 			function update() {
 				/* Your Code to Increase position X by 10 HERE */
-			moveBoxTo(positionX)
-			positionX = positionX + speed
-			};
-			if (boardWidth < positionX){
-				speed *= -speed;
+			moveBoxTo(positionX) 
+			positionX = positionX + speed 
+			
+			if (positionX >=boardWidth) {
+				speed = -speed}
+			else if (positionX < 0) {
+				speed = -speed
+			}
 			};
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
