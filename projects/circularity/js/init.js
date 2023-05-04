@@ -25,14 +25,14 @@ var circles = [];
         // TODO 2 : Create a function that draws a circle 
         function drawCircle(){
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
-            physikz.addRandomVelocity(circle, canvas, 20 , 20);
+            physikz.addRandomVelocity(circle, canvas, 70, 10);
             view.addChild(circle);
             circles.push(circle);
 
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-       for ( let i = 0 ; i < 100 ; i++ ) {
+       for ( let i = 0 ; i < 200; i++ ) {
         drawCircle();
        }
         ////////////////////////////////////////////////////////////
